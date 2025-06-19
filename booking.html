@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snazzy Paws Grooming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylesheet.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/616b3ef0e6.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="row header-row">
+      <div class="col-6 col-md-3 header-logo">
+        <a href="index.html">SNAZZY PAWS GROOMING</a>
+      </div>
+    <nav class="col-md-6 desktop-nav" aria-label="Main navigation">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+      <div class="col-4 col-md-3 header-end">
+        <span class="opening-times">Opening Hours:<br> 9:00–5:00</span>
+      </div>
+
+      <div class="col-2 header-hamburger">
+        <button id="hamburger" aria-label="Open navigation">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Main navigation">
+      <div class="mobile-nav-header">
+        <div class="header-logo">
+          <span>SNAZZY PAWS GROOMING</span>
+        </div>
+        <button id="close-nav" class="close-nav" aria-label="Close navigation">&times;</button>
+      </div>
+
+      <ul class="col-12">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a class="active" href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div  class="mobile-nav-footer">
+        <span class="opening-times">Opening Hours: 9:00AM – 5:00PM</span>
+      </div>
+    </nav>
+  </header>
+  <script src="js/header.js"></script>
+
+  <!-- Main Content -->
+<main>
+    <section class="booking-section container">
+      <div class="row">
+        <!--Booking Form -->
+        <div class="col-12 col-md-7 booking-form-container">
+          <form id="booking-form" autocomplete="off" novalidate>
+            <div class="booking-form-heading">CONTACT INFORMATION</div>
+            <div class="booking-form-row">
+              <div class="booking-form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name">
+              </div>
+              <div class="booking-form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name">
+              </div>
+            </div>
+            <div class="booking-form-row">
+              <div class="booking-form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required autocomplete="email">
+              </div>
+            </div>
+            <div class="booking-form-row">
+              <div class="booking-form-group">
+                <label for="mobile">Mobile Number *</label>
+                <input type="tel" id="mobile" name="mobile" required autocomplete="tel">
+              </div>
+            </div>
+            <div class="booking-form-heading" style="margin-top:2rem;">YOUR DOG</div>
+            <div class="booking-form-row">
+              <div class="booking-form-group">
+                <label for="datetime">Preferred Date &amp; Time *</label>
+                <input type="datetime-local" id="datetime" name="datetime" required ">
+              </div>
+            </div>
+            <div class="booking-form-row">
+              <div class="booking-form-group">
+                <label for="dogName">Dog's Name *</label>
+                <input type="text" id="dogName" name="dogName" required>
+              </div>
+              <div class="booking-form-group">
+                <label for="dogAge">Age *</label>
+                <input type="number" id="dogAge" name="dogAge" min="0" max="30" required>
+              </div>
+              <div class="booking-form-group">
+                <label for="dogBreed">Breed *</label>
+                <input type="text" id="dogBreed" name="dogBreed" required>
+              </div>
+            </div>
+            <div class="booking-form-row">
+              <div class="booking-form-group">
+                <label for="additionalInfo">Any additional information</label>
+                <textarea id="additionalInfo" name="additionalInfo" placeholder="Let us know anything else..."></textarea>
+              </div>
+            </div>
+            <p class="terms">
+              <strong>Terms &amp; Conditions</strong><br>
+              By submitting this booking request, you agree to our cancellation policy and confirm that your dog is up to date with vaccinations. Bookings are requests only and will be confirmed by our team.
+            </p>
+            <div class="terms-checkbox">
+              <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+              <label for="agreeTerms">I agree to the terms and conditions *</label>
+            </div>
+          </form>
+        </div>
+        <!-- Treatment Summary -->
+        <div class="col-12 col-md-5 booking-summary">
+          <img src="img/hero.jpg" alt="Spa Package" class="booking-summary-img">
+          <h3 class="booking-summary-title">Spa Package</h3>
+          <p class="booking-summary-desc">
+            Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.
+          </p>
+          <button type="submit" form="booking-form" class="btn">Submit Booking Request</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row footer-top">
+      <div class="col-12 col-md-6 footer-col footer-col-left">
+        <div class="footer-sitemap">
+          <h2>SITEMAP</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h2>CONTACT US</h2>
+          <p>Snazzy Paws Grooming</p>
+          <p>Phone: <a href="tel:+6431234567">+64 3 123 4567</a></p>
+          <p>Freephone: <a href="tel:0800762999">0800 762 999</a></p>
+          <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 footer-col footer-col-right">
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
+            width="100%"
+            height="180"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="footer-address">
+          <h2>OUR LOCATION</h2>
+          <p>Snazzy Paws Grooming</p>
+          <p>5 Papanui Road, Christchurch, New Zealand</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-socials-section">
+    <h2>CONNECT WITH US</h2>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.twitter.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+      <p class="footer-hours">Opening Hours<br>9:00AM – 5:00PM</p>
+    </div>
+  </div>
+</footer>

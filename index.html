@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snazzy Paws Grooming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylesheet.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/616b3ef0e6.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="row header-row">
+      <div class="col-6 col-md-3 header-logo">
+        <a href="index.html">SNAZZY PAWS GROOMING</a>
+      </div>
+    <nav class="col-md-6 desktop-nav" aria-label="Main navigation">
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+      <div class="col-4 col-md-3 header-end">
+        <span class="opening-times">Opening Hours:<br> 9:00–5:00</span>
+      </div>
+
+      <div class="col-2 header-hamburger">
+        <button id="hamburger" aria-label="Open navigation">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Main navigation">
+      <div class="mobile-nav-header">
+        <div class="header-logo">
+          <span>SNAZZY PAWS GROOMING</span>
+        </div>
+        <button id="close-nav" class="close-nav" aria-label="Close navigation">&times;</button>
+      </div>
+
+      <ul class="col-12">
+        <li><a class="active" href="inde">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div  class="mobile-nav-footer">
+        <span class="opening-times">Opening Hours: 9:00AM – 5:00PM</span>
+      </div>
+    </nav>
+  </header>
+  <script src="js/header.js"></script>
+
+  <!-- Main Content -->
+<main>
+  <!-- Hero Section-->
+  <div class="hero col-12">
+    <div class="hero-image">
+      <img src="img/hero.jpg" alt="Happy dog partially seen at bottom of the image.">
+    </div>
+    <div class="hero-content">
+      <h1>Welcome to Snazzy Paws Grooming</h1>
+      <p>Your pet's home away from home</p>
+      <a href="booking.html" class="btn">Book Now 	&#x2794;</a>
+    </div>
+  </div>
+  
+  <!-- Services Section -->
+<section class="services-section container">
+  <h2 class="services-heading">OUR SERVICES</h2>
+  <div class="services-carousel">
+    <div class="service-card">
+      <img src="img/dog6.jpg" alt="Dog Bathing">
+      <div class="service-card-content">
+        <h3>Dog Bathing</h3>
+        <p>Gentle, thorough baths for all breeds using premium products.</p>
+        <a href="#" class="btn">Learn More &#x2794;</a>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="img/dog1.jpg" alt="Haircuts & Styling">
+      <div class="service-card-content">
+        <h3>Haircuts & Styling</h3>
+        <p>Professional trims and creative styles tailored to your pet.</p>
+        <a href="#" class="btn">Learn More &#x2794;</a>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="img/dog3.jpg" alt="Nail Trimming">
+      <div class="service-card-content">
+        <h3>Nail Trimming</h3>
+        <p>Safe, stress-free nail trims for healthy, happy paws.</p>
+        <a href="#" class="btn">Learn More &#x2794;</a>
+      </div>
+    </div>
+    <div class="service-card">
+      <img src="img/dog7.jpg" alt="Teeth Cleaning">
+      <div class="service-card-content">
+        <h3>Teeth Cleaning</h3>
+        <p>Keep your pet’s smile bright with gentle dental care.</p>
+        <a href="#" class="btn">Learn More &#x2794;</a>
+      </div>
+    </div>
+    <!-- Add more cards as needed -->
+  </div>
+</section>
+<!-- Gift Voucher Section-->
+
+<section class="gift-vouchers-section container">
+  <div class="row">
+    <div class="col-12 col-md-6 gift-voucher-text">
+      <h2>GIFT VOUCHERS</h2>
+      <p>
+        Treat your loved ones (or their furry friends!) to a Snazzy Paws Grooming experience.  
+        Our gift vouchers are perfect for birthdays, holidays, or just because.  
+        Choose any amount and let them enjoy our premium pet grooming services.
+      </p>
+    </div>
+    <div class="col-12 col-md-6 gift-voucher-image-cta">
+      <img src="img/dog9.jpg" alt="Snazzy Paws Gift Voucher" class="gift-voucher-img">
+      <a href="#" class="btn gift-voucher-btn">Buy a Gift Voucher</a>
+    </div>
+  </div>
+</section>
+
+<section class="enquiry-section container">
+  <div class="row">
+    <!-- Form -->
+    <div class="col-12 col-md-6 enquiry-form-col">
+      <form class="enquiry-form">
+        <h2>ENQUIRY FORM</h2>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" required>
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" required>
+          </div>
+        </div>
+        <h3 class="enquiry-heading">YOUR ENQUIRY</h3>
+        <div class="form-row">
+          <div class="form-group full-width">
+            <label for="enquiry">Message</label>
+            <textarea id="enquiry" name="enquiry" rows="4" required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn">Submit Enquiry</button>
+      </form>
+    </div>
+    <!-- MAP & Contact info-->
+    <div class="col-12 col-md-6 location-col">
+      <h2 class="location-heading">WHERE TO FIND US</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
+          width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="5 Papanui Road Christchurch NZ"></iframe>
+      </div>
+      <div class="contact-location-box">
+        <div class="contact-info">
+          <h4>CONTACT US</h4>
+          <ul>
+            <li>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></li>
+            <li>Phone: <a href="tel:+6431234567">03 123 4567</a></li>
+            <li>Freephone: <a href="tel:0800123456">0800 123 456</a></li>
+          </ul>
+        </div>
+        <div class="location-info">
+          <h4>OUR LOCATION</h4>
+          <address>
+            5 Papanui Road<br>
+            Christchurch<br>
+            New Zealand
+          </address>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row footer-top">
+      <div class="col-12 col-md-6 footer-col footer-col-left">
+        <div class="footer-sitemap">
+          <h2>SITEMAP</h2>
+          <ul>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h2>CONTACT US</h2>
+          <p>Snazzy Paws Grooming</p>
+          <p>Phone: <a href="tel:+6431234567">+64 3 123 4567</a></p>
+          <p>Freephone: <a href="tel:0800762999">0800 762 999</a></p>
+          <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 footer-col footer-col-right">
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
+            width="100%"
+            height="180"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="footer-address">
+          <h2>OUR LOCATION</h2>
+          <p>Snazzy Paws Grooming</p>
+          <p>5 Papanui Road, Christchurch, New Zealand</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-socials-section">
+    <h2>CONNECT WITH US</h2>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.twitter.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+      <p class="footer-hours">Opening Hours<br>9:00AM – 5:00PM</p>
+    </div>
+  </div>
+</footer>

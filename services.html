@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snazzy Paws Grooming</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/stylesheet.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/616b3ef0e6.js" crossorigin="anonymous"></script>
+</head>
+
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="row header-row">
+      <div class="col-6 col-md-3 header-logo">
+        <a href="index.html">SNAZZY PAWS GROOMING</a>
+      </div>
+    <nav class="col-md-6 desktop-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active"href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+      <div class="col-4 col-md-3 header-end">
+        <span class="opening-times">Opening Hours:<br> 9:00–5:00</span>
+      </div>
+
+      <div class="col-2 header-hamburger">
+        <button id="hamburger" aria-label="Open navigation">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Main navigation">
+      <div class="mobile-nav-header">
+        <div class="header-logo">
+          <span>SNAZZY PAWS GROOMING</span>
+        </div>
+        <button id="close-nav" class="close-nav" aria-label="Close navigation">&times;</button>
+      </div>
+
+      <ul class="col-12">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div  class="mobile-nav-footer">
+        <span class="opening-times">Opening Hours: 9:00AM – 5:00PM</span>
+      </div>
+    </nav>
+  </header>
+  <script src="js/header.js"></script>
+
+  <!-- Main Content -->
+<main>
+  <!-- Services Table Section -->
+<section class="services-table-section">
+  <div class="container">
+    <h2 class="services-table-heading">Dog Grooming Services</h2>
+    <table class="services-table">
+      <thead>
+        <tr>
+          <th>Service</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Bath and Brush</td>
+          <td>Shampoo, blow-dry, brush-out and nail trim.</td>
+          <td>$25–$50</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Haircut</td>
+          <td>Bath, blow-dry, haircut (based on breed standard or owner's preference) and nail trim.</td>
+          <td>$45–$85</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Nail Trim</td>
+          <td>Trim nails and, in some cases, filing.</td>
+          <td>$10–$20</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Ear Cleaning</td>
+          <td>Gentle cleaning of ears to remove wax and debris.</td>
+          <td>$10–$15</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Teeth Brushing</td>
+          <td>Brushing with pet-safe toothpaste.</td>
+          <td>$10–$15</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>De-shedding Treatment</td>
+          <td>Special shampoo and undercoat removal.</td>
+          <td>$20–$40 <span class="services-table-note">in addition to bath or haircut</span></td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Flea and Tick Treatment</td>
+          <td>Shampoo and preventative treatment.</td>
+          <td>$15–$30</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Spa Package</td>
+          <td>Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.</td>
+          <td>$75–$150</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Express Service</td>
+          <td>For dogs that need minimal grooming or a quick touch-up.</td>
+          <td>$15–$25</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Medicated Bath</td>
+          <td>For pets with skin conditions requiring special shampoo.</td>
+          <td>$20–$40</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Special-breed Cuts</td>
+          <td>Breed-specific cuts or styling based on customer preference.</td>
+          <td>Varies (quoted after consultation)</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Puppy Package</td>
+          <td>Introductory grooming services tailored for puppies.</td>
+          <td>$30–$60</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Senior Dog Package</td>
+          <td>Grooming services tailored for older dogs, often with special handling and care.</td>
+          <td>$40–$80</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+        <tr>
+          <td>Full Grooming Package</td>
+          <td>Comprehensive grooming service, including bath, haircut, teeth brushing, nail trim and ear cleaning.</td>
+          <td>$60–$120</td>
+          <td><a href="booking.html" class="btn">Book Now</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row footer-top">
+      <div class="col-12 col-md-6 footer-col footer-col-left">
+        <div class="footer-sitemap">
+          <h2>SITEMAP</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="services.html">Services</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h2>CONTACT US</h2>
+          <p>Snazzy Paws Grooming</p>
+          <p>Phone: <a href="tel:+6431234567">+64 3 123 4567</a></p>
+          <p>Freephone: <a href="tel:0800762999">0800 762 999</a></p>
+          <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 footer-col footer-col-right">
+        <div class="footer-map">
+          <iframe
+            src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
+            width="100%"
+            height="180"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+        <div class="footer-address">
+          <h2>OUR LOCATION</h2>
+          <p>Snazzy Paws Grooming</p>
+          <p>5 Papanui Road, Christchurch, New Zealand</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-socials-section">
+    <h2>CONNECT WITH US</h2>
+    <div class="footer-socials">
+      <a href="https://www.facebook.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.twitter.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+      <p class="footer-hours">Opening Hours<br>9:00AM – 5:00PM</p>
+    </div>
+  </div>
+</footer>
