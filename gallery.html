@@ -15,44 +15,42 @@
   <header class="header">
     <div class="row header-row">
       <div class="col-6 col-md-3 header-logo">
-        <a href="index.html">SNAZZY PAWS GROOMING</a>
+        <a href="index.html" aria-label="Snazzy Paws Grooming Home">SNAZZY PAWS GROOMING</a>
       </div>
-    <nav class="col-md-6 desktop-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a class="active" href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="col-md-6 desktop-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a class="active" href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
       <div class="col-4 col-md-3 header-end">
-        <span class="opening-times">Opening Hours:<br> 9:00–5:00</span>
+        <span class="opening-times" aria-label="Opening Hours">Opening Hours:<br> 9:00–5:00</span>
       </div>
-
       <div class="col-2 header-hamburger">
-        <button id="hamburger" aria-label="Open navigation">
+        <button id="hamburger" aria-label="Open navigation menu" aria-controls="mobile-nav" aria-expanded="false">
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
         </button>
       </div>
     </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Main navigation">
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile main navigation" hidden>
       <div class="mobile-nav-header">
         <div class="header-logo">
           <span>SNAZZY PAWS GROOMING</span>
         </div>
-        <button id="close-nav" class="close-nav" aria-label="Close navigation">&times;</button>
+        <button id="close-nav" class="close-nav" aria-label="Close navigation menu" aria-controls="mobile-nav">&times;</button>
       </div>
-
       <ul class="col-12">
         <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a class="active" href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="gallery.html" aria-current="page">Gallery</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-      <div  class="mobile-nav-footer">
-        <span class="opening-times">Opening Hours: 9:00AM – 5:00PM</span>
+      <div class="mobile-nav-footer">
+        <span class="opening-times" aria-label="Opening Hours">Opening Hours: 9:00AM – 5:00PM</span>
       </div>
     </nav>
   </header>
@@ -60,281 +58,281 @@
 
   <!-- Main Content -->
   <main>
-  <section class="gallery-section">
-  <div class="container">
-  <div class="gallery-header">
-    <h1>Meet our clients</h1>
-    <p>Our furry friends leave looking and feeling their best! Browse some of our recent clients and see the Snazzy Paws difference.</p>
-  </div>
-  <div class="gallery-categories">
-    <button class="gallery-category-btn active" data-category="all">All</button>
-    <button class="gallery-category-btn" data-category="full-groom">Full Groom</button>
-    <button class="gallery-category-btn" data-category="wash-dry">Wash & Dry</button>
-  </div>
-  <div class="gallery-grid">
-  <div class="gallery-item" data-category="wash-dry">
-    <a href="booking.html" class="gallery-link">
-      <div class="gallery-img-wrapper">
-        <img src="img/dog1.jpg" alt="Max after Bath and Brush">
-        <div class="gallery-overlay">
-          <div class="gallery-overlay-content">
-            <span class="dog-name">Max</span>
-            <span class="dog-treatment">Bath and Brush</span>
+    <section class="gallery-section">
+      <div class="container">
+        <div class="gallery-header">
+          <h1>Meet our clients</h1>
+          <p>Our furry friends leave looking and feeling their best! Browse some of our recent clients and see the Snazzy Paws difference.</p>
+        </div>
+        <div class="gallery-categories" role="group" aria-label="Gallery filter categories">
+          <button class="gallery-category-btn active" data-category="all" aria-pressed="true" aria-label="Show all categories">All</button>
+          <button class="gallery-category-btn" data-category="full-groom" aria-pressed="false" aria-label="Show Full Groom">Full Groom</button>
+          <button class="gallery-category-btn" data-category="wash-dry" aria-pressed="false" aria-label="Show Wash and Dry">Wash & Dry</button>
+        </div>
+        <div class="gallery-grid" aria-label="Gallery of recent clients">
+          <div class="gallery-item" data-category="wash-dry">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog1.jpg" alt="Max after Bath and Brush at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Max</span>
+                    <span class="dog-treatment">Bath and Brush</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="full-groom">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog2.jpg" alt="Luna after Haircut at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Luna</span>
+                    <span class="dog-treatment">Haircut</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="puppy-package">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog15.jpg" alt="Finn after Puppy Package at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Finn</span>
+                    <span class="dog-treatment">Puppy Package</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="teeth-brushing">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog16.jpg" alt="Hazel after Teeth Brushing at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Hazel</span>
+                    <span class="dog-treatment">Teeth Brushing</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="nail-trim">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog3.jpg" alt="Charlie after Nail Trim at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Charlie</span>
+                    <span class="dog-treatment">Nail Trim</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="ear-cleaning">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog4.jpg" alt="Ruby after Ear Cleaning at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Ruby</span>
+                    <span class="dog-treatment">Ear Cleaning</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="teeth-brushing">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog5.jpg" alt="Milo after Teeth Brushing at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Milo</span>
+                    <span class="dog-treatment">Teeth Brushing</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="de-shedding">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog6.jpg" alt="Bailey after De-shedding Treatment at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Bailey</span>
+                    <span class="dog-treatment">De-shedding Treatment</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="flea-tick">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog7.jpg" alt="Daisy after Flea and Tick Treatment at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Daisy</span>
+                    <span class="dog-treatment">Flea and Tick Treatment</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="spa">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog8.jpg" alt="Cooper after Spa Package at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Cooper</span>
+                    <span class="dog-treatment">Spa Package</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="express">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog9.jpg" alt="Rosie after Express Service at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Rosie</span>
+                    <span class="dog-treatment">Express Service</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="medicated-bath">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog10.jpg" alt="Archie after Medicated Bath at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Archie</span>
+                    <span class="dog-treatment">Medicated Bath</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="special-breed">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog11.jpg" alt="Maggie after Special-breed Cuts at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Maggie</span>
+                    <span class="dog-treatment">Special-breed Cuts</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="puppy-package">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog12.jpg" alt="Teddy after Puppy Package at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Teddy</span>
+                    <span class="dog-treatment">Puppy Package</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="senior-dog">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog13.jpg" alt="Oscar after Senior Dog Package at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Oscar</span>
+                    <span class="dog-treatment">Senior Dog Package</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="gallery-item" data-category="full-grooming-package">
+            <a href="booking.html" class="gallery-link">
+              <div class="gallery-img-wrapper">
+                <img src="img/dog14.jpg" alt="Bella after Full Grooming Package at Snazzy Paws Grooming">
+                <div class="gallery-overlay">
+                  <div class="gallery-overlay-content">
+                    <span class="dog-name">Bella</span>
+                    <span class="dog-treatment">Full Grooming Package</span>
+                  </div>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
-    </a>
-  </div>
-  <div class="gallery-item" data-category="full-groom">
-    <a href="booking.html" class="gallery-link">
-      <div class="gallery-img-wrapper">
-        <img src="img/dog2.jpg" alt="Luna after Haircut">
-        <div class="gallery-overlay">
-          <div class="gallery-overlay-content">
-            <span class="dog-name">Luna</span>
-            <span class="dog-treatment">Haircut</span>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="gallery-item" data-category="puppy-package">
-  <a href="booking.html" class="gallery-link">
-    <div class="gallery-img-wrapper">
-      <img src="img/dog15.jpg" alt="Finn after Puppy Package">
-        <div class="gallery-overlay">
-          <div class="gallery-overlay-content">
-            <span class="dog-name">Finn</span>
-            <span class="dog-treatment">Puppy Package</span>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="gallery-item" data-category="teeth-brushing">
-    <a href="booking.html" class="gallery-link">
-      <div class="gallery-img-wrapper">
-        <img src="img/dog16.jpg" alt="Hazel after Teeth Brushing">
-        <div class="gallery-overlay">
-          <div class="gallery-overlay-content">
-            <span class="dog-name">Hazel</span>
-            <span class="dog-treatment">Teeth Brushing</span>
-          </div>
-        </div>
-      </div>
-    </a>
-  </div>
-
-    <div class="gallery-item" data-category="nail-trim">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog3.jpg" alt="Charlie after Nail Trim">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Charlie</span>
-              <span class="dog-treatment">Nail Trim</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="gallery-item" data-category="ear-cleaning">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog4.jpg" alt="Ruby after Ear Cleaning">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Ruby</span>
-              <span class="dog-treatment">Ear Cleaning</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="gallery-item" data-category="teeth-brushing">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog5.jpg" alt="Milo after Teeth Brushing">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Milo</span>
-              <span class="dog-treatment">Teeth Brushing</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="gallery-item" data-category="de-shedding">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog6.jpg" alt="Bailey after De-shedding Treatment">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Bailey</span>
-              <span class="dog-treatment">De-shedding Treatment</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="gallery-item" data-category="flea-tick">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog7.jpg" alt="Daisy after Flea and Tick Treatment">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Daisy</span>
-              <span class="dog-treatment">Flea and Tick Treatment</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="gallery-item" data-category="spa">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog8.jpg" alt="Cooper after Spa Package">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Cooper</span>
-              <span class="dog-treatment">Spa Package</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="gallery-item" data-category="express">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog9.jpg" alt="Rosie after Express Service">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Rosie</span>
-              <span class="dog-treatment">Express Service</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="gallery-item" data-category="medicated-bath">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog10.jpg" alt="Archie after Medicated Bath">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Archie</span>
-              <span class="dog-treatment">Medicated Bath</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="gallery-item" data-category="special-breed">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog11.jpg" alt="Maggie after Special-breed Cuts">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Maggie</span>
-              <span class="dog-treatment">Special-breed Cuts</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="gallery-item" data-category="puppy-package">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog12.jpg" alt="Teddy after Puppy Package">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Teddy</span>
-              <span class="dog-treatment">Puppy Package</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="gallery-item" data-category="senior-dog">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog13.jpg" alt="Oscar after Senior Dog Package">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Oscar</span>
-              <span class="dog-treatment">Senior Dog Package</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-    <div class="gallery-item" data-category="full-grooming-package">
-      <a href="booking.html" class="gallery-link">
-        <div class="gallery-img-wrapper">
-          <img src="img/dog14.jpg" alt="Bella after Full Grooming Package">
-          <div class="gallery-overlay">
-            <div class="gallery-overlay-content">
-              <span class="dog-name">Bella</span>
-              <span class="dog-treatment">Full Grooming Package</span>
-            </div>
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-  </div>
-  </section>
+    </section>
   </main>
 
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
-  <div class="container">
-    <div class="row footer-top">
-      <div class="col-12 col-md-6 footer-col footer-col-left">
-        <div class="footer-sitemap">
-          <h2>SITEMAP</h2>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a class="active" href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
+    <div class="container">
+      <div class="row footer-top">
+        <div class="col-12 col-md-6 footer-col footer-col-left">
+          <div class="footer-sitemap">
+            <h2>SITEMAP</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a class="active" href="gallery.html" aria-current="page">Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h2>CONTACT US</h2>
+            <p>Snazzy Paws Grooming</p>
+            <p>Phone: <a href="tel:+6431234567">+64 3 123 4567</a></p>
+            <p>Freephone: <a href="tel:0800762999">0800 762 999</a></p>
+            <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
+          </div>
         </div>
-        <div class="footer-contact">
-          <h2>CONTACT US</h2>
-          <p>Snazzy Paws Grooming</p>
-          <p>Phone: <a href="tel:+6431234567">+64 3 123 4567</a></p>
-          <p>Freephone: <a href="tel:0800762999">0800 762 999</a></p>
-          <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 footer-col footer-col-right">
-        <div class="footer-map">
-          <iframe
-            src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-        <div class="footer-address">
-          <h2>OUR LOCATION</h2>
-          <p>Snazzy Paws Grooming</p>
-          <p>5 Papanui Road, Christchurch, New Zealand</p>
+        <div class="col-12 col-md-6 footer-col footer-col-right">
+          <div class="footer-map">
+            <iframe
+              src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map showing location of Snazzy Paws Grooming, 5 Papanui Road, Christchurch, New Zealand">
+            </iframe>
+          </div>
+          <div class="footer-address">
+            <h2>OUR LOCATION</h2>
+            <p>Snazzy Paws Grooming</p>
+            <p>5 Papanui Road, Christchurch, New Zealand</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-socials-section">
-    <h2>CONNECT WITH US</h2>
-    <div class="footer-socials">
-      <a href="https://www.facebook.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.twitter.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
-      <p class="footer-hours">Opening Hours<br>9:00AM – 5:00PM</p>
+    <div class="footer-socials-section">
+      <h2>CONNECT WITH US</h2>
+      <div class="footer-socials" aria-label="Social media links">
+        <a href="https://www.facebook.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.twitter.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <p class="footer-hours">Opening Hours<br>9:00AM – 5:00PM</p>
+      </div>
     </div>
-  </div>
   </footer>
 </body>
 </html>

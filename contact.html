@@ -15,44 +15,42 @@
   <header class="header">
     <div class="row header-row">
       <div class="col-6 col-md-3 header-logo">
-        <a href="index.html">SNAZZY PAWS GROOMING</a>
+        <a href="index.html" aria-label="Snazzy Paws Grooming Home">SNAZZY PAWS GROOMING</a>
       </div>
-    <nav class="col-md-6 desktop-nav" aria-label="Main navigation">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
+      <nav class="col-md-6 desktop-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
       <div class="col-4 col-md-3 header-end">
-        <span class="opening-times">Opening Hours:<br> 9:00–5:00</span>
+        <span class="opening-times" aria-label="Opening Hours">Opening Hours:<br> 9:00–5:00</span>
       </div>
-
       <div class="col-2 header-hamburger">
-        <button id="hamburger" aria-label="Open navigation">
+        <button id="hamburger" aria-label="Open navigation menu" aria-controls="mobile-nav" aria-expanded="false">
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
           <span class="hamburger-bar"></span>
         </button>
       </div>
     </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Main navigation">
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile main navigation" hidden>
       <div class="mobile-nav-header">
         <div class="header-logo">
           <span>SNAZZY PAWS GROOMING</span>
         </div>
-        <button id="close-nav" class="close-nav" aria-label="Close navigation">&times;</button>
+        <button id="close-nav" class="close-nav" aria-label="Close navigation menu" aria-controls="mobile-nav">&times;</button>
       </div>
-
       <ul class="col-12">
-        <li><a href="inde">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a class="active" href="contact.html">Contact</a></li>
+        <li><a class="active" href="contact.html" aria-current="page">Contact</a></li>
       </ul>
-      <div  class="mobile-nav-footer">
-        <span class="opening-times">Opening Hours: 9:00AM – 5:00PM</span>
+      <div class="mobile-nav-footer">
+        <span class="opening-times" aria-label="Opening Hours">Opening Hours: 9:00AM – 5:00PM</span>
       </div>
     </nav>
   </header>
@@ -60,80 +58,80 @@
 
   <!-- Main Content -->
   <main>
-  <section class="enquiry-section container">
-
-  <div class="row">
-    <!-- Form -->
-    <div class="col-12 col-md-6 enquiry-form-col">
-      <form class="enquiry-form" >
-        <h2>ENQUIRY FORM</h2>
-        <div class="form-row">
-          <div class="form-group">
-            <label for="firstname">First Name *</label>
-            <input type="text" id="firstname" name="firstname" required autocomplete="given-name">
+    <section class="enquiry-section container">
+      <div class="row">
+        <!-- Form -->
+        <div class="col-12 col-md-6 enquiry-form-col">
+          <form class="enquiry-form" aria-label="Enquiry form">
+            <h2>ENQUIRY FORM</h2>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstname">First Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="firstname" name="firstname" required aria-required="true" autocomplete="given-name">
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="lastname" name="lastname" required aria-required="true" autocomplete="family-name">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="mobile">Mobile Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="mobile" name="mobile" required aria-required="true" autocomplete="tel">
+              </div>
+            </div>
+            <h3 class="enquiry-heading">YOUR ENQUIRY</h3>
+            <div class="form-row">
+              <div class="form-group full-width">
+                <label for="enquiry">Message <span aria-hidden="true">*</span></label>
+                <textarea id="enquiry" name="enquiry" rows="4" required aria-required="true"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn" aria-label="Submit enquiry">Submit Enquiry</button>
+          </form>
+        </div>
+        <!-- MAP & Contact info-->
+        <div class="col-12 col-md-6 location-col">
+          <h2 class="location-heading">WHERE TO FIND US</h2>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
+              style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map showing location of Snazzy Paws Grooming, 5 Papanui Road, Christchurch, New Zealand">
+            </iframe>
           </div>
-          <div class="form-group">
-            <label for="lastname">Last Name *</label>
-            <input type="text" id="lastname" name="lastname" required autocomplete="family-name">
+          <div class="contact-location-box">
+            <div class="contact-info">
+              <h4>CONTACT US</h4>
+              <ul>
+                <li>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></li>
+                <li>Phone: <a href="tel:+6431234567">03 123 4567</a></li>
+                <li>Freephone: <a href="tel:0800123456">0800 123 456</a></li>
+              </ul>
+            </div>
+            <div class="location-info">
+              <h4>OUR LOCATION</h4>
+              <address>
+                5 Papanui Road<br>
+                Christchurch<br>
+                New Zealand
+              </address>
+            </div>
           </div>
         </div>
-        <div class="form-row">
-          <div class="form-group full-width">
-            <label for="email">Email Address *</label>
-            <input type="email" id="email" name="email" required autocomplete="email">
-          </div>
-        </div>
-        <div class="form-row">
-          <div class="form-group full-width">
-            <label for="mobile">Mobile Number *</label>
-            <input type="tel" id="mobile" name="mobile" required autocomplete="tel">
-          </div>
-        </div>
-        <h3 class="enquiry-heading">YOUR ENQUIRY</h3>
-        <div class="form-row">
-          <div class="form-group full-width">
-            <label for="enquiry">Message</label>
-            <textarea id="enquiry" name="enquiry" rows="4" required></textarea>
-          </div>
-        </div>
-        <button type="submit" class="btn">Submit Enquiry</button>
-      </form>
-    </div>
-    <!-- MAP & Contact info-->
-    <div class="col-12 col-md-6 location-col">
-      <h2 class="location-heading">WHERE TO FIND US</h2>
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
-          style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="5 Papanui Road Christchurch NZ"></iframe>
       </div>
-      <div class="contact-location-box">
-        <div class="contact-info">
-          <h4>CONTACT US</h4>
-          <ul>
-            <li>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></li>
-            <li>Phone: <a href="tel:+6431234567">03 123 4567</a></li>
-            <li>Freephone: <a href="tel:0800123456">0800 123 456</a></li>
-          </ul>
-        </div>
-        <div class="location-info">
-          <h4>OUR LOCATION</h4>
-          <address>
-            5 Papanui Road<br>
-            Christchurch<br>
-            New Zealand
-          </address>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- FAQ-->
+    </section>
+    <!-- FAQ-->
     <section class="faq-section container">
       <h2 class="faq-heading">Frequently Asked Questions</h2>
-      <div class="faq-list">
+      <div class="faq-list" aria-label="Frequently Asked Questions">
         <div class="faq-item">
           <h3 class="faq-question">How do I book a grooming appointment?</h3>
           <div class="faq-answer">
@@ -179,55 +177,56 @@
       </div>
     </section>
   </main>
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="site-footer">
-  <div class="container">
-    <div class="row footer-top">
-      <div class="col-12 col-md-6 footer-col footer-col-left">
-        <div class="footer-sitemap">
-          <h2>SITEMAP</h2>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a class="active" href="contact.html">Contact Us</a></li>
-          </ul>
+    <div class="container">
+      <div class="row footer-top">
+        <div class="col-12 col-md-6 footer-col footer-col-left">
+          <div class="footer-sitemap">
+            <h2>SITEMAP</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a class="active" href="contact.html" aria-current="page">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-contact">
+            <h2>CONTACT US</h2>
+            <p>Snazzy Paws Grooming</p>
+            <p>Phone: <a href="tel:+6431234567">+64 3 123 4567</a></p>
+            <p>Freephone: <a href="tel:0800762999">0800 762 999</a></p>
+            <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
+          </div>
         </div>
-        <div class="footer-contact">
-          <h2>CONTACT US</h2>
-          <p>Snazzy Paws Grooming</p>
-          <p>Phone: <a href="tel:+6431234567">+64 3 123 4567</a></p>
-          <p>Freephone: <a href="tel:0800762999">0800 762 999</a></p>
-          <p>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></p>
-        </div>
-      </div>
-      <div class="col-12 col-md-6 footer-col footer-col-right">
-        <div class="footer-map">
-          <iframe
-            src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-        <div class="footer-address">
-          <h2>OUR LOCATION</h2>
-          <p>Snazzy Paws Grooming</p>
-          <p>5 Papanui Road, Christchurch, New Zealand</p>
+        <div class="col-12 col-md-6 footer-col footer-col-right">
+          <div class="footer-map">
+            <iframe
+              src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Map showing location of Snazzy Paws Grooming, 5 Papanui Road, Christchurch, New Zealand">
+            </iframe>
+          </div>
+          <div class="footer-address">
+            <h2>OUR LOCATION</h2>
+            <p>Snazzy Paws Grooming</p>
+            <p>5 Papanui Road, Christchurch, New Zealand</p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-socials-section">
-    <h2>CONNECT WITH US</h2>
-    <div class="footer-socials">
-      <a href="https://www.facebook.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook"></i></a>
-      <a href="https://www.instagram.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.twitter.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
-      <p class="footer-hours">Opening Hours<br>9:00AM – 5:00PM</p>
+    <div class="footer-socials-section">
+      <h2>CONNECT WITH US</h2>
+      <div class="footer-socials" aria-label="Social media links">
+        <a href="https://www.facebook.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.twitter.com/SnazzyPawsGrooming" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <p class="footer-hours">Opening Hours<br>9:00AM – 5:00PM</p>
+      </div>
     </div>
-  </div>
   </footer>
 </body>
 </html>
