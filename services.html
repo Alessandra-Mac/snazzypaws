@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <title>Snazzy Paws Grooming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/stylesheet.min.css">
+  <!-- Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -13,55 +17,39 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="row header-row">
-      <div class="col-6 col-md-3 header-logo">
-        <a href="index.html" aria-label="Snazzy Paws Grooming Home">SNAZZY PAWS GROOMING</a>
-      </div>
-      <nav class="col-md-6 desktop-nav" aria-label="Main navigation">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a class="active" href="services.html" aria-current="page">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="col-4 col-md-3 header-end">
-        <span class="opening-times" aria-label="Opening Hours">Opening Hours:<br> 9:00–5:00</span>
-      </div>
-      <div class="col-2 header-hamburger">
-        <button id="hamburger" aria-label="Open navigation menu" aria-controls="mobile-nav" aria-expanded="false">
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <a class="header-logo navbar-brand" href="index.html" aria-label="Snazzy Paws Grooming Home">SNAZZY PAWS<br> GROOMING</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-    </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile main navigation" hidden>
-      <div class="mobile-nav-header">
-        <div class="header-logo">
-          <span>SNAZZY PAWS GROOMING</span>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-md-0 ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="services.html" aria-current="page">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <span class="d-none d-md-block ms-auto" aria-label="Opening Hours">Opening Hours:<br> 9:00–5:00</span>
         </div>
-        <button id="close-nav" class="close-nav" aria-label="Close navigation menu" aria-controls="mobile-nav">&times;</button>
-      </div>
-      <ul class="col-12">
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="services.html" aria-current="page">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="mobile-nav-footer">
-        <span class="opening-times" aria-label="Opening Hours">Opening Hours: 9:00AM – 5:00PM</span>
+        <span class=" d-block d-md-none ms-auto" aria-label="Opening Hours" >Opening Hours:<br> 9:00–5:00</span>
       </div>
     </nav>
   </header>
-  <script src="js/header.js"></script>
-  <!-- Main Content -->
-  <main>
-    <!-- Services Table Section -->
-    <section class="services-table-section">
-      <div class="container">
-        <h2 class="services-table-heading">Dog Grooming Services</h2>
-        <table class="services-table" aria-label="Dog Grooming Services and Prices">
+
+<main>
+  <section class="my-5 container">
+      <h2 class="services-table-heading text-center mb-4">Dog Grooming Services</h2>
+      <div class="table-responsive services-table">
+        <table class=" table align-middle" aria-label="Dog Grooming Services and Prices">
           <thead>
             <tr>
               <th scope="col">Service</th>
@@ -75,91 +63,122 @@
               <td>Bath and Brush</td>
               <td>Shampoo, blow-dry, brush-out and nail trim.</td>
               <td>$25–$50</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Bath and Brush service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Bath and Brush service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Haircut</td>
               <td>Bath, blow-dry, haircut (based on breed standard or owner's preference) and nail trim.</td>
               <td>$45–$85</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Haircut service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Haircut service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Nail Trim</td>
               <td>Trim nails and, in some cases, filing.</td>
               <td>$10–$20</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Nail Trim service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Nail Trim service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Ear Cleaning</td>
               <td>Gentle cleaning of ears to remove wax and debris.</td>
               <td>$10–$15</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Ear Cleaning service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Ear Cleaning service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Teeth Brushing</td>
               <td>Brushing with pet-safe toothpaste.</td>
               <td>$10–$15</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Teeth Brushing service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Teeth Brushing service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>De-shedding Treatment</td>
               <td>Special shampoo and undercoat removal.</td>
-              <td>$20–$40 <span class="services-table-note">in addition to bath or haircut</span></td>
-              <td><a href="booking.html" class="btn" aria-label="Book De-shedding Treatment service now">Book Now</a></td>
+              <td>
+                $20–$40 <span class="services-table-note">in addition to bath or haircut</span>
+              </td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book De-shedding Treatment service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Flea and Tick Treatment</td>
               <td>Shampoo and preventative treatment.</td>
               <td>$15–$30</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Flea and Tick Treatment service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Flea and Tick Treatment service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Spa Package</td>
               <td>Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.</td>
               <td>$75–$150</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Spa Package service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Spa Package service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Express Service</td>
               <td>For dogs that need minimal grooming or a quick touch-up.</td>
               <td>$15–$25</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Express Service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Express Service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Medicated Bath</td>
               <td>For pets with skin conditions requiring special shampoo.</td>
               <td>$20–$40</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Medicated Bath service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Medicated Bath service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Special-breed Cuts</td>
               <td>Breed-specific cuts or styling based on customer preference.</td>
               <td>Varies (quoted after consultation)</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Special-breed Cuts service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Special-breed Cuts service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Puppy Package</td>
               <td>Introductory grooming services tailored for puppies.</td>
               <td>$30–$60</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Puppy Package service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Puppy Package service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Senior Dog Package</td>
               <td>Grooming services tailored for older dogs, often with special handling and care.</td>
               <td>$40–$80</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Senior Dog Package service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Senior Dog Package service now">Book Now</a>
+              </td>
             </tr>
             <tr>
               <td>Full Grooming Package</td>
               <td>Comprehensive grooming service, including bath, haircut, teeth brushing, nail trim and ear cleaning.</td>
               <td>$60–$120</td>
-              <td><a href="booking.html" class="btn" aria-label="Book Full Grooming Package service now">Book Now</a></td>
+              <td>
+                <a href="booking.html" class="btn bttn" aria-label="Book Full Grooming Package service now">Book Now</a>
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
-    </section>
-  </main>
+  </section>
+</main>
+
   <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
@@ -167,11 +186,13 @@
         <div class="col-12 col-md-6 footer-col footer-col-left">
           <div class="footer-sitemap">
             <h2>SITEMAP</h2>
-            <ul>
+            <ul class="list-unstyled">
               <li><a href="index.html">Home</a></li>
               <li><a class="active" href="services.html" aria-current="page">Services</a></li>
               <li><a href="gallery.html">Gallery</a></li>
               <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="roster.html">Roster</a></li>
             </ul>
           </div>
           <div class="footer-contact">
@@ -183,7 +204,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 footer-col footer-col-right">
-          <div class="footer-map">
+          <div class="footer-map mb-3">
             <iframe
               src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
               style="border:0;"
@@ -211,5 +232,7 @@
       </div>
     </div>
   </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

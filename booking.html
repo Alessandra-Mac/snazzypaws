@@ -4,138 +4,132 @@
   <meta charset="UTF-8">
   <title>Snazzy Paws Grooming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/stylesheet.min.css">
+  <meta name="description" content="Book your dog's grooming appointment at Snazzy Paws Grooming. Fill out our easy online booking form and let our team pamper your pet.">
+  <!-- Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/616b3ef0e6.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="row header-row">
-      <div class="col-6 col-md-3 header-logo">
-        <a href="index.html" aria-label="Snazzy Paws Grooming Home">SNAZZY PAWS GROOMING</a>
-      </div>
-      <nav class="col-md-6 desktop-nav" aria-label="Main navigation">
-        <ul>
-          <li><a class="active" href="index.html" aria-current="page">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="col-4 col-md-3 header-end">
-        <span class="opening-times" aria-label="Opening Hours">Opening Hours:<br> 9:00–5:00</span>
-      </div>
-      <div class="col-2 header-hamburger">
-        <button id="hamburger" aria-label="Open navigation menu" aria-controls="mobile-nav" aria-expanded="false">
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <a class="header-logo navbar-brand" href="index.html" aria-label="Snazzy Paws Grooming Home">SNAZZY PAWS<br> GROOMING</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-    </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile main navigation" hidden>
-      <div class="mobile-nav-header">
-        <div class="header-logo">
-          <span>SNAZZY PAWS GROOMING</span>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-md-0 ">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <span class="d-none d-md-block ms-auto" aria-label="Opening Hours">Opening Hours:<br> 9:00–5:00</span>
         </div>
-        <button id="close-nav" class="close-nav" aria-label="Close navigation menu" aria-controls="mobile-nav">&times;</button>
-      </div>
-      <ul class="col-12">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a class="active" href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="mobile-nav-footer">
-        <span class="opening-times" aria-label="Opening Hours">Opening Hours: 9:00AM – 5:00PM</span>
+        <span class=" d-block d-md-none ms-auto" aria-label="Opening Hours" >Opening Hours:<br> 9:00–5:00</span>
       </div>
     </nav>
   </header>
-  <script src="js/header.js"></script>
 
-  <!-- Main Content -->
-  <main>
-    <section class="booking-section container">
-      <div class="row">
-        <!--Booking Form -->
-        <div class="col-12 col-md-7 booking-form-container">
-          <form id="booking-form" autocomplete="off" novalidate aria-label="Booking form">
+<!-- Main Content -->
+<main>
+  <section class="my-5 container">
+    <div class="row g-4">
+      <!--Booking Form -->
+      <div class="col-12 col-md-7">
+        <div class="booking-form-container p-4 h-100 d-flex flex-column">
+          <form id="booking-form" autocomplete="off" novalidate aria-label="Booking form" class="flex-grow-1 d-flex flex-column">
             <div class="booking-form-heading">CONTACT INFORMATION</div>
-            <div class="booking-form-row">
-              <div class="booking-form-group">
+            <div class="row ">
+              <div class="col-12 col-md-6 booking-form-group mt-3">
                 <label for="firstName">First Name <span aria-hidden="true">*</span></label>
-                <input type="text" id="firstName" name="firstName" required aria-required="true" autocomplete="given-name">
+                <input type="text" id="firstName" name="firstName" required aria-required="true" autocomplete="given-name" class="form-control">
               </div>
-              <div class="booking-form-group">
+              <div class="col-12 col-md-6 booking-form-group mt-3">
                 <label for="lastName">Last Name <span aria-hidden="true">*</span></label>
-                <input type="text" id="lastName" name="lastName" required aria-required="true" autocomplete="family-name">
+                <input type="text" id="lastName" name="lastName" required aria-required="true" autocomplete="family-name" class="form-control">
               </div>
             </div>
-            <div class="booking-form-row">
-              <div class="booking-form-group">
+            <div class="row ">
+              <div class="col-12 booking-form-group mt-3">
                 <label for="email">Email Address <span aria-hidden="true">*</span></label>
-                <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
+                <input type="email" id="email" name="email" required aria-required="true" autocomplete="email" class="form-control">
               </div>
             </div>
-            <div class="booking-form-row">
-              <div class="booking-form-group">
+            <div class="row">
+              <div class="col-12 booking-form-group mt-3">
                 <label for="mobile">Mobile Number <span aria-hidden="true">*</span></label>
-                <input type="tel" id="mobile" name="mobile" required aria-required="true" autocomplete="tel">
+                <input type="tel" id="mobile" name="mobile" required aria-required="true" autocomplete="tel" class="form-control">
               </div>
             </div>
-            <div class="booking-form-heading" style="margin-top:2rem;">YOUR DOG</div>
-            <div class="booking-form-row">
-              <div class="booking-form-group">
+            <div class="booking-form-heading mt-3">YOUR DOG</div>
+            <div class="row">
+              <div class="col-12 booking-form-group mt-3">
                 <label for="datetime">Preferred Date &amp; Time <span aria-hidden="true">*</span></label>
-                <input type="datetime-local" id="datetime" name="datetime" required aria-required="true">
+                <input type="datetime-local" id="datetime" name="datetime" required aria-required="true" class="form-control">
               </div>
             </div>
-            <div class="booking-form-row">
-              <div class="booking-form-group">
+            <div class="row">
+              <div class="col-12 col-md-4 booking-form-group mt-3">
                 <label for="dogName">Dog's Name <span aria-hidden="true">*</span></label>
-                <input type="text" id="dogName" name="dogName" required aria-required="true">
+                <input type="text" id="dogName" name="dogName" required aria-required="true" class="form-control">
               </div>
-              <div class="booking-form-group">
+              <div class="col-12 col-md-4 booking-form-group mt-3">
                 <label for="dogAge">Age <span aria-hidden="true">*</span></label>
-                <input type="number" id="dogAge" name="dogAge" min="0" max="30" required aria-required="true">
+                <input type="number" id="dogAge" name="dogAge" min="0" max="30" required aria-required="true" class="form-control">
               </div>
-              <div class="booking-form-group">
+              <div class="col-12 col-md-4 booking-form-group mt-3">
                 <label for="dogBreed">Breed <span aria-hidden="true">*</span></label>
-                <input type="text" id="dogBreed" name="dogBreed" required aria-required="true">
+                <input type="text" id="dogBreed" name="dogBreed" required aria-required="true" class="form-control">
               </div>
             </div>
-            <div class="booking-form-row">
-              <div class="booking-form-group">
+            <div class="row mt-1">
+              <div class="col-12 booking-form-group">
                 <label for="additionalInfo">Any additional information</label>
-                <textarea id="additionalInfo" name="additionalInfo" placeholder="Let us know anything else..."></textarea>
+                <textarea id="additionalInfo" name="additionalInfo" placeholder="Let us know anything else..." class="form-control"></textarea>
               </div>
             </div>
-            <p class="terms">
+            <p class="terms my-3 p-3">
               <strong>Terms &amp; Conditions</strong><br>
               By submitting this booking request, you agree to our cancellation policy and confirm that your dog is up to date with vaccinations. Bookings are requests only and will be confirmed by our team.
             </p>
-            <div class="terms-checkbox">
-              <input type="checkbox" id="agreeTerms" name="agreeTerms" required aria-required="true">
-              <label for="agreeTerms">I agree to the terms and conditions <span aria-hidden="true">*</span></label>
+            <div class="form-check terms-checkbox mb-3">
+              <input type="checkbox" id="agreeTerms" name="agreeTerms" required aria-required="true" class="form-check-input">
+              <label for="agreeTerms" class="form-check-label">I agree to the terms and conditions <span aria-hidden="true">*</span></label>
             </div>
           </form>
         </div>
-        <!-- Treatment Summary -->
-        <div class="col-12 col-md-5 booking-summary">
+      </div>
+      <!-- Treatment Summary -->
+      <div class="col-12 col-md-5">
+        <div class="booking-summary h-100 d-flex flex-column align-items-center p-4">
           <img src="img/hero.jpg" alt="Dog enjoying a spa package at Snazzy Paws Grooming" class="booking-summary-img">
-          <h3 class="booking-summary-title">Spa Package</h3>
+          <h3 class="booking-summary-title mt-3">Spa Package</h3>
           <p class="booking-summary-desc">
             Bath, haircut, teeth brushing, nail trim and sometimes special scents or conditioners.
           </p>
-          <button type="submit" form="booking-form" class="btn" aria-label="Submit booking request">Submit Booking Request</button>
+          <button type="submit" form="booking-form" class="btn bttn w-100 mt-auto" aria-label="Submit booking request">Submit Booking Request</button>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
+  </section>
+</main>
+
 
   <!-- Footer -->
   <footer class="site-footer">
@@ -144,11 +138,13 @@
         <div class="col-12 col-md-6 footer-col footer-col-left">
           <div class="footer-sitemap">
             <h2>SITEMAP</h2>
-            <ul>
-              <li><a href="index.html" aria-current="page">Home</a></li>
+            <ul class="list-unstyled">
+              <li><a href="index.html">Home</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="gallery.html">Gallery</a></li>
               <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="roster.html">Roster</a></li>
             </ul>
           </div>
           <div class="footer-contact">
@@ -160,7 +156,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 footer-col footer-col-right">
-          <div class="footer-map">
+          <div class="footer-map mb-3">
             <iframe
               src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
               style="border:0;"
@@ -188,5 +184,7 @@
       </div>
     </div>
   </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -4,7 +4,12 @@
   <meta charset="UTF-8">
   <title>Snazzy Paws Grooming</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/stylesheet.min.css">
+  <meta name="description" content="Snazzy Paws Grooming offers professional dog grooming services in Christchurch, NZ. Book online, explore our services, and treat your pet to a premium grooming experience.">
+  <!-- Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
@@ -13,95 +18,80 @@
 <body>
   <!-- Header -->
   <header class="header">
-    <div class="row header-row">
-      <div class="col-6 col-md-3 header-logo">
-        <a href="index.html" aria-label="Snazzy Paws Grooming Home">SNAZZY PAWS GROOMING</a>
-      </div>
-      <nav class="col-md-6 desktop-nav" aria-label="Main navigation">
-        <ul>
-          <li><a class="active" href="index.html" aria-current="page">Home</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="col-4 col-md-3 header-end">
-        <span class="opening-times" aria-label="Opening Hours">Opening Hours:<br> 9:00–5:00</span>
-      </div>
-      <div class="col-2 header-hamburger">
-        <button id="hamburger" aria-label="Open navigation menu" aria-controls="mobile-nav" aria-expanded="false">
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
-          <span class="hamburger-bar"></span>
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid">
+        <a class="header-logo navbar-brand" href="index.html" aria-label="Snazzy Paws Grooming Home">SNAZZY PAWS<br> GROOMING</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-      </div>
-    </div>
-    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile main navigation" hidden>
-      <div class="mobile-nav-header">
-        <div class="header-logo">
-          <span>SNAZZY PAWS GROOMING</span>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav mx-auto mb-2 mb-md-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html" aria-current="page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+          <span class="d-none d-md-block ms-auto" aria-label="Opening Hours">Opening Hours:<br> 9:00–5:00</span>
         </div>
-        <button id="close-nav" class="close-nav" aria-label="Close navigation menu" aria-controls="mobile-nav">&times;</button>
-      </div>
-      <ul class="col-12">
-        <li><a class="active" href="index.html" aria-current="page">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="mobile-nav-footer">
-        <span class="opening-times" aria-label="Opening Hours">Opening Hours: 9:00AM – 5:00PM</span>
+        <span class=" d-block d-md-none ms-auto" aria-label="Opening Hours" >Opening Hours:<br> 9:00–5:00</span>
       </div>
     </nav>
   </header>
-  <script src="js/header.js"></script>
   <!-- Main Content -->
   <main>
     <!-- Hero Section-->
-    <div class="hero col-12">
+    <div class="hero w-100">
       <div class="hero-image">
         <img src="img/hero.jpg" alt="Happy dog partially seen at bottom of the image.">
       </div>
       <div class="hero-content">
         <h1>Welcome to Snazzy Paws Grooming</h1>
         <p>Your pet's home away from home</p>
-        <a href="booking.html" class="btn" aria-label="Book a grooming appointment now">Book Now &#x2794;</a>
+        <a href="booking.html" class="bttn" aria-label="Book a grooming appointment now">Book Now &#x2794;</a>
       </div>
     </div>
     <!-- Services Section -->
-    <section class="services-section container">
+    <section class="my-5 container">
       <h2 class="services-heading">OUR SERVICES</h2>
-      <div class="services-carousel" aria-label="Service carousel">
-        <div class="service-card">
-          <img src="img/dog6.jpg" alt="Dog Bathing at Snazzy Paws Grooming">
-          <div class="service-card-content">
-            <h3>Dog Bathing</h3>
-            <p>Gentle, thorough baths for all breeds using premium products.</p>
-            <a href="#" class="btn" aria-label="Learn more about Dog Bathing">Learn More &#x2794;</a>
+      <div class="services-carousel d-flex flex-row flex-nowrap overflow-auto py-2">
+        <div class="card service-card" >
+          <img src="img/dog6.jpg" class="card-img-top" alt="Dog Bathing at Snazzy Paws Grooming">
+          <div class="card-body service-card-content">
+            <h3 class="card-title">Dog Bathing</h3>
+            <p class="card-text">Gentle, thorough baths for all breeds using premium products.</p>
+            <a href="#" class="bttn" aria-label="Learn more about Dog Bathing">Learn More &#x2794;</a>
           </div>
         </div>
-        <div class="service-card">
-          <img src="img/dog1.jpg" alt="Haircuts and Styling at Snazzy Paws Grooming">
-          <div class="service-card-content">
-            <h3>Haircuts & Styling</h3>
-            <p>Professional trims and creative styles tailored to your pet.</p>
-            <a href="#" class="btn" aria-label="Learn more about Haircuts and Styling">Learn More &#x2794;</a>
+        <div class="card service-card" >
+          <img src="img/dog1.jpg" class="card-img-top" alt="Haircuts and Styling at Snazzy Paws Grooming">
+          <div class="card-body service-card-content">
+            <h3 class="card-title">Haircuts & Styling</h3>
+            <p class="card-text">Professional trims and creative styles tailored to your pet.</p>
+            <a href="#" class="bttn" aria-label="Learn more about Haircuts and Styling">Learn More &#x2794;</a>
           </div>
         </div>
-        <div class="service-card">
-          <img src="img/dog3.jpg" alt="Nail Trimming at Snazzy Paws Grooming">
-          <div class="service-card-content">
-            <h3>Nail Trimming</h3>
-            <p>Safe, stress-free nail trims for healthy, happy paws.</p>
-            <a href="#" class="btn" aria-label="Learn more about Nail Trimming">Learn More &#x2794;</a>
+        <div class="card service-card" >
+          <img src="img/dog3.jpg" class="card-img-top" alt="Nail Trimming at Snazzy Paws Grooming">
+          <div class="card-body service-card-content">
+            <h3 class="card-title">Nail Trimming</h3>
+            <p class="card-text">Safe, stress-free nail trims for healthy, happy paws.</p>
+            <a href="#" class="bttn" aria-label="Learn more about Nail Trimming">Learn More &#x2794;</a>
           </div>
         </div>
-        <div class="service-card">
-          <img src="img/dog7.jpg" alt="Teeth Cleaning at Snazzy Paws Grooming">
-          <div class="service-card-content">
-            <h3>Teeth Cleaning</h3>
-            <p>Keep your pet’s smile bright with gentle dental care.</p>
-            <a href="#" class="btn" aria-label="Learn more about Teeth Cleaning">Learn More &#x2794;</a>
+        <div class="card service-card" >
+          <img src="img/dog7.jpg" class="card-img-top" alt="Teeth Cleaning at Snazzy Paws Grooming">
+          <div class="card-body service-card-content">
+            <h3 class="card-title">Teeth Cleaning</h3>
+            <p class="card-text">Keep your pet’s smile bright with gentle dental care.</p>
+            <a href="#" class="bttn" aria-label="Learn more about Teeth Cleaning">Learn More &#x2794;</a>
           </div>
         </div>
         <!-- Add more cards as needed -->
@@ -118,54 +108,54 @@
             Choose any amount and let them enjoy our premium pet grooming services.
           </p>
         </div>
-        <div class="col-12 col-md-6 gift-voucher-image-cta">
+        <div class="col-12 col-md-6 d-flex flex-column align-items-center">
           <img src="img/dog9.jpg" alt="Snazzy Paws Gift Voucher" class="gift-voucher-img">
-          <a href="#" class="btn gift-voucher-btn" aria-label="Buy a gift voucher">Buy a Gift Voucher</a>
+          <a href="#" class="bttn" aria-label="Buy a gift voucher">Buy a Gift Voucher</a>
         </div>
       </div>
     </section>
-    <section class="enquiry-section container">
+    <!-- Contact Form -->
+    <section class="py-4 container">
       <div class="row">
-        <!-- Form -->
         <div class="col-12 col-md-6 enquiry-form-col">
           <form class="enquiry-form" aria-label="Enquiry form">
             <h2>ENQUIRY FORM</h2>
-            <div class="form-row">
-              <div class="form-group">
+            <div class="row form-row">
+              <div class="col-12 col-md-6 form-group">
                 <label for="firstname">First Name <span aria-hidden="true">*</span></label>
-                <input type="text" id="firstname" name="firstname" required aria-required="true">
+                <input type="text" id="firstname" name="firstname" required aria-required="true" class="form-control">
               </div>
-              <div class="form-group">
+              <div class="col-12 col-md-6 form-group">
                 <label for="lastname">Last Name <span aria-hidden="true">*</span></label>
-                <input type="text" id="lastname" name="lastname" required aria-required="true">
+                <input type="text" id="lastname" name="lastname" required aria-required="true" class="form-control">
               </div>
             </div>
-            <div class="form-row">
-              <div class="form-group full-width">
+            <div class="row form-row">
+              <div class="col-12 form-group full-width">
                 <label for="email">Email Address <span aria-hidden="true">*</span></label>
-                <input type="email" id="email" name="email" required aria-required="true">
+                <input type="email" id="email" name="email" required aria-required="true" class="form-control">
               </div>
             </div>
-            <div class="form-row">
-              <div class="form-group full-width">
+            <div class="row form-row">
+              <div class="col-12 form-group full-width">
                 <label for="mobile">Mobile Number <span aria-hidden="true">*</span></label>
-                <input type="tel" id="mobile" name="mobile" required aria-required="true">
+                <input type="tel" id="mobile" name="mobile" required aria-required="true" class="form-control">
               </div>
             </div>
             <h3 class="enquiry-heading">YOUR ENQUIRY</h3>
-            <div class="form-row">
-              <div class="form-group full-width">
+            <div class="row form-row">
+              <div class="col-12 form-group full-width">
                 <label for="enquiry">Message <span aria-hidden="true">*</span></label>
-                <textarea id="enquiry" name="enquiry" rows="4" required aria-required="true"></textarea>
+                <textarea id="enquiry" name="enquiry" rows="4" required aria-required="true" class="form-control"></textarea>
               </div>
             </div>
-            <button type="submit" class="btn" aria-label="Submit enquiry">Submit Enquiry</button>
+            <button type="submit" class="bttn w-100 mt-3" aria-label="Submit enquiry">Submit Enquiry</button>
           </form>
         </div>
         <!-- MAP & Contact info-->
         <div class="col-12 col-md-6 location-col">
           <h2 class="location-heading">WHERE TO FIND US</h2>
-          <div class="map-container">
+          <div class="map-container mb-3">
             <iframe
               src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
               style="border:0;" allowfullscreen="" loading="lazy"
@@ -173,16 +163,16 @@
               title="Map showing location of Snazzy Paws Grooming, 5 Papanui Road, Christchurch, New Zealand">
             </iframe>
           </div>
-          <div class="contact-location-box">
-            <div class="contact-info">
+          <div class="contact-location-box d-flex flex-wrap">
+            <div class="contact-info flex-fill">
               <h4>CONTACT US</h4>
-              <ul>
+              <ul class="list-unstyled">
                 <li>Email: <a href="mailto:info@snazzypaws.co.nz">info@snazzypaws.co.nz</a></li>
                 <li>Phone: <a href="tel:+6431234567">03 123 4567</a></li>
                 <li>Freephone: <a href="tel:0800123456">0800 123 456</a></li>
               </ul>
             </div>
-            <div class="location-info">
+            <div class="location-info flex-fill">
               <h4>OUR LOCATION</h4>
               <address>
                 5 Papanui Road<br>
@@ -202,11 +192,13 @@
         <div class="col-12 col-md-6 footer-col footer-col-left">
           <div class="footer-sitemap">
             <h2>SITEMAP</h2>
-            <ul>
+            <ul class="list-unstyled">
               <li><a class="active" href="index.html" aria-current="page">Home</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="gallery.html">Gallery</a></li>
               <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="roster.html">Roster</a></li>
             </ul>
           </div>
           <div class="footer-contact">
@@ -218,7 +210,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6 footer-col footer-col-right">
-          <div class="footer-map">
+          <div class="footer-map mb-3">
             <iframe
               src="https://www.google.com/maps?q=5+Papanui+Road,+Christchurch,+New+Zealand&output=embed"
               style="border:0;"
@@ -246,5 +238,7 @@
       </div>
     </div>
   </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
