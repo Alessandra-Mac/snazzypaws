@@ -1,5 +1,4 @@
-# Snazzy Paws Grooming
-## BIT607 Alessandra MacLeod
+# Snazzy Paws Grooming - BIT607 Alessandra MacLeod
 ## Setup
 if copying config files to Apache 
 please change .htaccess to reflect your .htpasswd location ex "/app/www/.htpasswd"
